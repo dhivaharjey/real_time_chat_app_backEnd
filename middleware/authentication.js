@@ -8,17 +8,17 @@ import User from "../model/userSchema.js";
 const COOKIE_OPTIONS = {
   httpOnly: true,
   secure: process.env.NODE_ENV === "production",
-  sameSite: "Lax",
-  // path: "/",
+  sameSite: "None",
+  path: "/",
 };
 
 async function authentication(req, res, next) {
   try {
-    // console.log(req.cookies);
+    console.log(req.cookies);
 
     const accessToken = req.cookies?.accessToken;
     const refreshToken = req.cookies?.refreshToken;
-    // console.log(accessToken, refreshToken);
+    console.log(accessToken, refreshToken);
 
     if (!accessToken) {
       if (!refreshToken) {
