@@ -42,7 +42,7 @@ connectDB();
 
 app.use("/api/auth", authRouter);
 app.use("/api/messages", messageRoutes);
-app.get("/", () => {
+app.get("/", (req, res) => {
   return res.send("App is running Successfully!!1");
 });
 
