@@ -9,7 +9,7 @@ import { inputValidation } from "../validation/inputValidation.js";
 const COOKIE_OPTIONS = {
   httpOnly: true,
   secure: process.env.NODE_ENV === "production",
-  sameSite: "Lax",
+  sameSite: "None",
   // path: "/",
 };
 
@@ -123,8 +123,6 @@ export const signUp = async (req, res) => {
         message: "Account created successfully",
         user: newUser,
       });
-
-    
   } catch (error) {
     console.log("signUp error", error);
 
