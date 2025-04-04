@@ -3,6 +3,9 @@
 A full-stack real-time chat application built with **React**, **Node.js**, **Express**, **Socket.IO**, and **MongoDB**. This application allows users to communicate in real-time, manage their profiles, and view chat history.
 
 ---
+[Auth](https://github.com/user-attachments/assets/88ff639f-b53c-4156-9c18-619cfd1d02e6)
+
+[Working](https://github.com/user-attachments/assets/dfade480-bc7a-40e3-95b9-f79cac7cae01)
 
 ## Features
 
